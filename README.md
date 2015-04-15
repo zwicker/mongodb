@@ -1,3 +1,7 @@
+## Notes
+
+This Repository is a fork of the dockerfile/mongodb built to update the mongo version to 3.0.2
+
 ## MongoDB Dockerfile
 
 
