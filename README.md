@@ -51,3 +51,7 @@ _You will need to set up nat port forwarding with:_
     VBoxManage modifyvm "boot2docker-vm" --natpf1 "guestmongodb,tcp,127.0.0.1,27017,,27017"
 
 This will allow you to connect to your mongo container with the standard `mongo` commands.
+
+## Run the mongo db in production with port routing
+
+sudo docker run -d -p 27017:27017 -p 28017:28017 -v <pass in directory>:/data/db --name <container-name> zwicker/mongodb:v1 mongod --httpinterface --rest
